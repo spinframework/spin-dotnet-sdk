@@ -208,7 +208,7 @@ There are several known issues, of which the most severe are:
   on - we have seen this on numeric parse methods and `StringComparer` properties.
   You can work around this by turning Wizer off for affected modules. To do this, change
   `<UseWizer>true</UseWizer>` in the `.csproj` to `<UseWizer>false</UseWizer>`.
-* In some cases, unhandled exceptionc also cause "indirect call type mismatch" instead of being
+* In some cases, unhandled exceptions also cause "indirect call type mismatch" instead of being
   returned as 500 Internal Server Error responses. You can work around this by catching problematic
   exceptions and returning error responses manually.
 
